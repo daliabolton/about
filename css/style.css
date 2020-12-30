@@ -64,6 +64,7 @@ h1{
     p{
         font-family: 'Times New Roman', Times, serif;
         font-size: 20px;
+        
     }
 
     h3{
@@ -105,9 +106,8 @@ h1{
    
 
 img{
-width: 40%;
-margin: 5px;
-margin-right: 50;
+width: 50%;
+padding: 15px;
 float: left;
 overflow: inherit;
 
@@ -115,12 +115,15 @@ overflow: inherit;
 
 }
 .aboutMe{
-    margin: 10% 100;
     margin-top: 50;
-    
+    margin-bottom: 50;
+   
     
 }
 
+body{
+    margin: auto;
+}
 
    
 
@@ -139,13 +142,31 @@ overflow: inherit;
     }
 
     @media screen and (max-width:800px){
-        p,#nav,img{
+        #nav,.aboutMe{
             width: 100%;
         }
     }
   
     @media screen and (max-width:800px) {
-        .header, .myWork, .logo,.table, #menu-outer, .square  {
+        .header, .myWork, .logo,.table, #menu-outer{
             width: 100%;
         }
       }
+
+      @media screen and (max-width:800px){
+          img{
+              width: 50%;
+          }
+      }
+
+      @media screen and (max-width:800px){
+          p,.wrapText{
+            margin: auto;
+            font-size: 17px;
+          }
+        }
+
+
+        .wrapText{
+            margin: 70 40;
+        }
